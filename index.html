@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="navigating your journey in tech">
+  <title>From novice to expert</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/theme/white.css" id="theme">
+  <style>
+  h1,h2,h3,h4,h5,h6 {
+
+      text-transform: none!important;
+  }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">From novice to expert</h1>
+  <p class="author">navigating your journey in tech</p>
+  <p class="date">Khalid Lafi</p>
+</section>
+
+<section class="slide level1">
+
+<h3 id="whoami">$ whoami</h3>
+<ul>
+<li>Khalid Lafi Almouraikhy</li>
+<li>Principal Engineer <span class="citation"
+data-cites="Mozn">@Mozn</span> - Co-Founder <span class="citation"
+data-cites="ByLinker">@ByLinker</span></li>
+<li>~15 years of experience.</li>
+<li>I build a lot of open source projects <a
+href="https://github.com/lafikl">Github: <span class="citation"
+data-cites="lafikl">@lafikl</span></a></li>
+<li>I gave talks on them at O’rielly Velocity 2014 and RedisConf 2018 in
+San francisco</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<p>This talk is based on my personal experience, as a reflection to what
+worked for me. While trying to generalize the lessons learned.</p>
+</section>
+<section class="slide level1">
+
+<h2 id="outline">Outline</h2>
+<ul>
+<li>You’re about to graduate/freshgrads</li>
+<li>New Hire</li>
+<li>You want to become senior</li>
+<li>Stories</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="types-of-knowledge">Types of knowledge</h2>
+</section>
+<section class="slide level1">
+
+<ul>
+<li>Fundamental knowledge. (long lasting age, and transferrable)
+<ul>
+<li>Data structures &amp; Algorithms</li>
+<li>Computer Architecture</li>
+<li>Operating Systems</li>
+<li>Network</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<ul>
+<li>Specific knowledge that isn’t fundamental (like mastering a
+framework).
+<ul>
+<li>React</li>
+<li>Django</li>
+<li>Flutter …etc</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<p><img data-src="/images/kelsey.png" /></p>
+</section>
+<section class="slide level1">
+
+<div style="max-width: 70%; display: inline-block">
+<p><img data-src="/images/carmack.png" /></p>
+</div>
+</section>
+<section id="t" class="slide level1">
+<h1>T</h1>
+<h3 id="aim-to-be-a-t-shaped-person">Aim to be a T-shaped person</h3>
+<p>You just started, don’t focus on one discipline.. explore everything,
+know what’s out there. With time you should dive deeper at the areas
+that interests you.</p>
+</section>
+<section class="slide level1">
+
+<p>According to Paul Graham:</p>
+<blockquote>
+<p>The first step is to decide what to work on. The work you choose
+needs to have three qualities:<br />
+it has to be <strong>something you have a natural aptitude for</strong>,
+that you have a <strong>deep interest in</strong>, and that offers scope
+to do great work.</p>
+</blockquote>
+<p><a href="https://paulgraham.com/greatwork.html">How to do great
+work</a></p>
+</section>
+<section class="slide level1">
+
+<p>You’re about to graduate or you’re a freshgrad</p>
+<p>What do you need to <strong>do</strong>?</p>
+</section>
+<section class="slide level1">
+
+<p><strong>Build something, take it through the full cycle. And keep it
+running!</strong><br />
+Don’t pay attention to best practices.<br />
+Just build something and deploy it. You gain have a mental model of how
+things work on a very high-level.</p>
+<p>Examples:</p>
+<ul>
+<li>Restful API</li>
+<li>Website with small function (url shortner)</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<p><strong>Now we dig deeper.</strong></p>
+<p>What do you need to <strong>learn</strong>?</p>
+</section>
+<section class="slide level1">
+
+<h3 id="terminal-shell">Terminal &amp; Shell</h3>
+<div style="float: left; max-width: 50%; display: inline-block">
+<p><img data-src="/images/missing.png" /></p>
+</div>
+<div style="float: right; max-width: 50%;">
+<ul>
+<li><a href="https://missing.csail.mit.edu/2020/course-shell/">Course
+overview + the shell</a></li>
+<li><a href="https://missing.csail.mit.edu/2020/shell-tools/">Shell
+Tools and Scripting</a></li>
+<li><a href="https://missing.csail.mit.edu/2020/data-wrangling/">Data
+Wrangling</a></li>
+</ul>
+</div>
+</section>
+<section class="slide level1">
+
+<h3 id="linuxunix">Linux/Unix</h3>
+<p>You should be able to answer these questions:</p>
+<ul>
+<li>What’s a process?</li>
+<li>How to know what process is running?</li>
+<li>How to have a process always running? (Daemon)</li>
+<li>What’s a file descriptor?</li>
+</ul>
+<p><strong>My first outage was caused by full disks. Because, i didn’t
+know i had to rotate logs</strong></p>
+</section>
+<section class="slide level1">
+
+<h3 id="how-process-works-in-linuxunix">How process works in
+linux/unix</h3>
+</section>
+<section class="slide level1">
+
+<p><a href="https://www.bottomupcs.com/">Bottom Up CS</a></p>
+<ul>
+<li>Chapter 5. The Process</li>
+<li>Chapter 8. Behind the process</li>
+</ul>
+<p><a
+href="https://gist.github.com/lafikl/66db0391f8398fd85b17f908930cd2b5">Notes</a></p>
+</section>
+<section class="slide level1">
+
+<div style="float: right; max-width: 50%;">
+<p><a
+href="https://www.amazon.com/UNIX-Linux-System-Administration-Handbook/dp/0134277554">UNIX
+and Linux System Administration Handbook 5th Edition</a><br />
+- Section 4.2</p>
+</div>
+<div style="float: left; max-width: 50%; display: inline-block">
+<p><img data-src="/images/life-process.png" /></p>
+</div>
+</section>
+<section class="slide level1">
+
+<h3 id="linuxunix-1">Linux/Unix</h3>
+<div style="float: right; max-width: 50%;">
+<p><a
+href="https://www.amazon.com/Advanced-Programming-UNIX-Environment-3rd/dp/0321637739">Advanced
+Programming in the UNIX Environment, 3rd Edition</a><br />
+- Read the first section only.</p>
+</div>
+<div style="float: left; max-width: 50%; display: inline-block">
+<p><img data-src="/images/apue.png" /></p>
+</div>
+</section>
+<section class="slide level1">
+
+<p>Learn algorithms and data structures</p>
+<ul>
+<li>You can get from a very bad solution to a 10x better one just by
+picking the right data structure.</li>
+</ul>
+<p><a
+href="https://gist.github.com/lafikl/5d70722a7e453370434bfbbd06baaf78#file-algosdist-md">List</a></p>
+</section>
+<section id="real-story" class="slide level1">
+<h1>Real Story</h1>
+</section>
+<section class="slide level1">
+
+<p>You have a CSV file containing</p>
+<pre class="csv"><code>start_ip, end_ip,vpn,hosting
+192.0.0.1,192.0.0.2,true,false
+...
+...
+...</code></pre>
+<p>The file size is 10GB on disk, but in memory it becomes 200GB. How
+can you read it into memory to serve a function like this</p>
+<pre><code>func is_vpn(ip string) bool</code></pre>
+<p>Which data structure &amp; algorithm you would use?</p>
+</section>
+<section class="slide level1">
+
+<p>Git</p>
+<ul>
+<li><a href="https://missing.csail.mit.edu/2020/version-control/">MIT
+missing semester: Git</a></li>
+<li><a href="https://dangitgit.com/">dangit</a></li>
+</ul>
+<p>Git uses merkle-trees. I explained them here</p>
+<p><a
+href="https://newsletterbylinker.substack.com/p/merkle-tree-git-and-tls-and-dynamo">Merkle
+Tree</a></p>
+</section>
+<section class="slide level1">
+
+<p>Learn how the network works, on a high-level</p>
+<ul>
+<li><a
+href="https://github.com/hardikvasa/http-connection-lifecycle?tab=readme-ov-file#the-connection">Life
+of an HTTP request</a></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<p>Learn SQL and how to use databases. Pick an RDBMS and learn it,
+preferably Postgres.</p>
+</section>
+<section class="slide level1">
+
+<p>Pick a language and build things in it, practice as much as you
+can.</p>
+</section>
+<section class="slide level1">
+
+<p>Learn how to use Docker</p>
+</section>
+<section class="slide level1">
+
+<p>Keep in mind there’s no magic anywhere.. it’s all abstractions made
+by humans and you can dive deep every now and then to see how it
+works.</p>
+</section>
+<section id="new-hire" class="slide level1">
+<h1>New hire</h1>
+<p>Congrats you got hired!</p>
+</section>
+<section class="slide level1">
+
+<h3 id="things-youll-see">Things you’ll see</h3>
+<p>Software delivery cycle:</p>
+<ul>
+<li>How they collaborate, manage code? (Git, Github, Gitlab)</li>
+<li>How do they ship the software? (CI/CD)</li>
+<li>How they package the software? (Docker)</li>
+<li>How they test? (Unit tests, integration tests, e2e tests)</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<p>Spend time learning the company core business:<br />
+- <strong>What matters to them? how they make money?</strong></p>
+<p>This will be handy when you want to make technical decisions, because
+you can align what you do with it.</p>
+</section>
+<section class="slide level1">
+
+<h2 id="how-to-be-structured-in-making-a-decision">How to be structured
+in making a decision?</h2>
+</section>
+<section class="slide level1">
+
+<h4
+id="every-engineering-decision-has-a-trade-off-so-you-should-be-able-to-answer-these-questions">Every
+engineering decision has a trade-off, so you should be able to answer
+these questions:</h4>
+<ul>
+<li>What are you trying to solve?</li>
+<li>What solutions did you consider? each one with its own
+trade-offs</li>
+<li>Which solution are you choosing and why?</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<p>Read a lot of open source code, from different projects you’re
+using.<br />
+It’s the best way to become a better engineer.</p>
+<p>Examples:</p>
+<ul>
+<li>NGINX</li>
+<li>Redis</li>
+<li>Kubernetes</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<div style="float: left; max-width: 50%; margin-top: 50px;">
+<p>Read how other engineers, work. I highly recommened Coders At
+Work.</p>
+</div>
+<div style="float: right; max-width: 50%; display: inline-block">
+<p><img data-src="/images/coderatwork.png" /></p>
+</div>
+</section>
+<section class="slide level1">
+
+<p><img data-src="/images/joe.png" /></p>
+</section>
+<section class="slide level1">
+
+<p>Read my post on</p>
+<p><a href="https://newsletterbylinker.substack.com/p/399">وش تحتاج تعرف
+كمبرمج؟</a></p>
+</section>
+<section class="slide level1">
+
+<p>Learn distributed systems</p>
+<p>Books</p>
+<ul>
+<li><a href="https://book.mixu.net/distsys/single-page.html">Distributed
+systems for fun and profit</a></li>
+<li><a
+href="https://www.amazon.sa/-/en/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321">Designing
+Data-Intensive Applications</a></li>
+</ul>
+<p>Video Course</p>
+<ul>
+<li><a href="https://pdos.csail.mit.edu/6.824/schedule.html">MIT
+6.5840</a></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<div style="float: right; max-width: 50%;">
+<p><a href="https://lafikl.github.io/liblb-site/study.html">An Empirical
+Study of Load Balancing Algorithms</a></p>
+</div>
+<div style="float: left; max-width: 50%; display: inline-block">
+<p><img data-src="/images/liblb.png" /></p>
+</div>
+<p>Learn how load balancing work</p>
+</section>
+<section class="slide level1">
+
+<p>Thanks you!</p>
+<p>For more questions reach out to me on:</p>
+<ul>
+<li>Twitter: <a href="https://x.com/iklafi"><span class="citation"
+data-cites="iklafi">@iklafi</span></a></li>
+<li>Github: <a href="https://github.com/lafikl"><span class="citation"
+data-cites="lafikl">@lafikl</span></a></li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
