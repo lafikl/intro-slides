@@ -50,12 +50,12 @@ This talk is based on my personal experience, as a reflection to what worked for
 ---
 
 
-![](/images/kelsey.png)
+![](images/kelsey.png)
 
 ---
 
 <div style="max-width: 70%; display: inline-block">
-![](/images/carmack.png)
+![](images/carmack.png)
 </div>
 
 
@@ -108,7 +108,7 @@ What do you need to **learn**?
 ### Terminal & Shell
 
 <div style="float: left; max-width: 50%; display: inline-block">
-![](/images/missing.png)
+![](images/missing.png)
 </div>
 
 <div style="float: right; max-width: 50%;">
@@ -154,7 +154,7 @@ You should be able to answer these questions:
 
 
 <div style="float: left; max-width: 50%; display: inline-block">
-![](/images/life-process.png)
+![](images/life-process.png)
 </div>
 
 
@@ -170,7 +170,7 @@ You should be able to answer these questions:
 
 
 <div style="float: left; max-width: 50%; display: inline-block">
-![](/images/apue.png)
+![](images/apue.png)
 </div>
 
 
@@ -303,14 +303,14 @@ Read how other engineers, work. I highly recommened Coders At Work.
 
 
 <div style="float: right; max-width: 50%; display: inline-block">
-![](/images/coderatwork.png)
+![](images/coderatwork.png)
 </div>
 
 
 ---
 
 
-![](/images/joe.png)
+![](images/joe.png)
 
 ---
 
@@ -343,7 +343,7 @@ Video Course
 
 
 <div style="float: left; max-width: 50%; display: inline-block">
-![](/images/liblb.png)
+![](images/liblb.png)
 
 </div>
 
